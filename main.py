@@ -1,6 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException, status, Response
 from sqlalchemy.orm import Session
 
+from fastapi.middleware.cors import CORSMiddleware
+
 from models import Player
 from database import engine, Base, get_db
 from repositories import PlayerRepository
@@ -10,6 +12,15 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*']
+)
+
+# Rota raiz da API
+@app.get("/")
+def home():
+    return {"Página Inicial da API"}
 
 # Rota de Cadastro de player
 @app.post("/api/players", response_model=PlayerResponse, status_code=status.HTTP_201_CREATED)
