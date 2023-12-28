@@ -4,12 +4,17 @@ import axios from 'axios';
 import './App.css'
 
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<{name: string}[]>([]);
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/players')
       .then(response => setData(response.data));
   }, []);
+
+  interface Player{
+    name: string;
+
+  }
 
   return (
     <>
