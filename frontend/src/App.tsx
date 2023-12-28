@@ -11,11 +11,6 @@ function App() {
       .then(response => setData(response.data));
   }, []);
 
-  interface Player{
-    name: string;
-
-  }
-
   return (
     <>
 
