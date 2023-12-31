@@ -1,0 +1,30 @@
+:root{
+    --blue-900: #15131E;
+    --blue-700: #27396C;
+    --marine-blue: #00FFF1;
+
+    --white: #FEFEFD;
+
+    --grey-200: #B9B8CB;
+    --grey-400: #3B3947;
+
+    --yellow: #DCFC04;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--blue-900);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tipografia */
+
+
+.title{
+    color: var(--yellow);
+}
+

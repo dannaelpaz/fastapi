@@ -1,0 +1,62 @@
+.wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: var(--yellow);
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+
+.podium_list{
+    min-height: 20rem;
+}
+
+.ranking_list{
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.ranking_list li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.4rem;
+    justify-content: left;
+    border-top: 0.5px solid var(--grey-400);
+    gap: 0.5rem;
+}
+
+.classification_number{
+    font-weight: 700;
+    color: var(--grey-200);
+}
+
+
+.ranking_list img{
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid var(--grey-400);
+}
+
+.player_name{
+    font-size: 1.1rem;
+    color: var(--grey-200);
+    font-weight: 700;
+}
+
+.player_nickname{
+    color: var(--grey-400);
+    font-size: 400;
+}
+
+.player_pdl{
+    color: var(--white);
+    font-weight: 700;
+}
